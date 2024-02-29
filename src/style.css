@@ -1,1 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.padre {
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 500px;
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+}
