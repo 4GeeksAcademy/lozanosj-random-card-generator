@@ -25,13 +25,13 @@ window.onload = function() {
   let type = ["♦", "♥", "♠", "♣"];
 
   function generateRandomCard() {
-    let indexRandNumber = Math.floor(Math.random() * numbers.length);
-    let indexRandType = Math.floor(Math.random() * type.length);
+    let indexRandomNumber = Math.floor(Math.random() * numbers.length);
+    let indexRandomType = Math.floor(Math.random() * type.length);
 
-    let randNumber = numbers[indexRandNumber];
-    let randType = type[indexRandType];
+    let randomNumber = numbers[indexRandomNumber];
+    let randomType = type[indexRandomType];
 
-    return { number: randNumber, type: randType };
+    return { number: randomNumber, type: randomType };
   }
 
   let card = generateRandomCard();
@@ -44,6 +44,4 @@ window.onload = function() {
 
   document.getElementById("type1").style.color = fontColor;
   document.getElementById("type2").style.color = fontColor;
-
-  console.log(card);
 };
